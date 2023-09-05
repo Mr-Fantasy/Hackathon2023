@@ -1,0 +1,23 @@
+CREATE DATABASE TEST_DB;
+
+SELECT * FROM PASSED_QUALITY_CHECK_RECORDS_SOURCE_STAGE;
+
+create or replace TABLE TEST_DB.PUBLIC.BHAV_DATA (
+	SYMBOL STRING,
+	SERIES STRING,
+	OPEN FLOAT,
+	HIGH FLOAT,
+	LOW FLOAT,
+	CLOSE FLOAT,
+	LAST FLOAT,
+	PREVCLOSE FLOAT,
+	TOTTRDQTY INTEGER,
+	TOTTRDVAL FLOAT,
+	GENERATED_DATE DATE,
+	TOTALTRADES INTEGER,
+	ISIN STRING
+);
+
+CREATE TABLE BHAV_TRANSFORMED_DATA AS select symbol,series,isin,OPEN,CLOSE,HIGH,LAST,LOW,PREVCLOSE,TOTALTRADES,TOTTRDQTY,TOTTRDVAL, (("LOW")-("HIGH")) as spread_high_low, (("CLOSE")-("OPEN")) as spread_open_close, div0(((("CLOSE")-("PREVCLOSE"))*100),("PREVCLOSE")) as returns_perc, generated_date, FIRST_VALUE("OPEN") OVER (PARTITION BY SYMBOL,year(generated_date),month(generated_date) ORDER BY generated_date) as open_monthly, LAST_VALUE("CLOSE") OVER (PARTITION BY SYMBOL,year(generated_date),month(generated_date) ORDER BY generated_date) as close_monthly, max("HIGH") OVER (PARTITION BY SYMBOL,year(generated_date),month(generated_date) ORDER BY generated_date) as high_monthly, min("LOW") OVER (PARTITION BY SYMBOL,year(generated_date),month(generated_date) ORDER BY generated_date) as low_monthly from (select *, to_date(generated_date) from BHAV_DATA where series='EQ') ORDER BY generated_date;
+
+SELECT * FROM BHAV_TRANSFORMED_DATA;

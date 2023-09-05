@@ -35,11 +35,11 @@ The data pipeline is designed to handle the complete lifecycle of data processin
     comprises of null data validation, primary key validation, duplicate check, Data type an data length validation.
   * #### Error Handling:
     Tests the handling of erroneous scenarios, such as missing or inaccessible data sources, faulty transformations, or incomplete data storage by reporting the quality check failed records.
-  * #### Data Storage(Silver layer):
+* #### Data Storage(Silver layer):
     The validated data sent to Snowflake (Data warehouse) for further transformation.
-  * #### Data Transformation(golden layer):
+* #### Data Transformation(golden layer):
     Calculating spread high low, spread open close, Returns percentage.
-  * #### Data Analysis:
+* #### Data Analysis:
     Analyzing the stored data to identify patterns, trends, and insights and building dashboard in Power BI.
 
 ## Data Pipeline Execution time from MKT to the S3 staging :

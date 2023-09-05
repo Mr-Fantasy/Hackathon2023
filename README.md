@@ -42,6 +42,20 @@ The data pipeline is designed to handle the complete lifecycle of data processin
   * #### Data Analysis:
     Analyzing the stored data to identify patterns, trends, and insights and building dashboard in Power BI.
 
+## Data Pipeline Execution time from MKT to the S3 staging :
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/94fed1f0-b7ab-4585-be89-a3491e259a94)
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/5439c097-dca5-424d-916c-a7344008a7dc)
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/b33aaaad-90d9-45aa-9a50-387932aa4529)
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/7ae1460a-54b2-45b3-a035-06569631f9d1)
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/5612df37-a484-4ea8-b627-790f32f1554a)
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/5097f393-d79a-4d88-9c42-604081175678)
+
+
+
+
+## Data Pipeline Execution time From BHAV data to the S3 staging :
+![image](https://github.com/saileshchauhan/Hackathon2023/assets/76868785/196762c3-eacd-4881-957c-cebfa3083f34)
+
 ## 🛠 Tools and Technology utilised: 
 * AWS S3, glue, workflows
 * Snowflake for data warehousing 

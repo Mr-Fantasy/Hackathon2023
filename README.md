@@ -19,8 +19,13 @@ A characteristic of data pipeline development is the frequent release of hig
 This project is aimed at implementing a data pipeline and automated testing for a NSE Market and BHAV data. The objective is to ensure the accuracy, reliability, and consistency of the data being processed and to provide a seamless and efficient workflow for data handling to end user. 
 
 ## Architecture of Automated data pipeline with Data Validation
-![Screenshot1](https://github.com/saileshchauhan/Hackathon2023/blob/master/Hackathon_DataPipeline-Final-2.png)
+![Hackathon_DataPipeline-Final-2-Page-2](https://github.com/Mr-Fantasy/Hackathon2023/assets/76868785/751d31eb-d81b-4271-ae57-2bdab1fe1d1e)
 
+
+## Analytics Reports Based on Financial data from Gold layer in Snowflake
+![Analytics_report_1](https://github.com/Mr-Fantasy/Hackathon2023/assets/76868785/1b0f90da-93aa-4cb7-8275-ad21aaf5da9e)
+
+![Analytics_report_2](https://github.com/Mr-Fantasy/Hackathon2023/assets/76868785/996e9374-af69-4b5f-aff8-f32214ff8780)
 
 ## 🛠 Components of Data Pipeline Framework with test automation :
 

@@ -59,8 +59,8 @@ The data pipeline is designed to handle the complete lifecycle of data processin
 ## 🛠 Tools and Technology utilised: 
 * AWS S3, glue, workflows
 * Snowflake for data warehousing 
-* Pyspark is the programming language used for developing the code. 
-* Visual studio code for development purpose. 
+* Pyspark is the framework used for developing the code. 
+* Visual studio code for development environment. 
 * GitHub is used as a version control system.
 * Power BI for Visualization.
 
